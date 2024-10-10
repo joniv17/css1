@@ -1,0 +1,113 @@
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Estilo del contenedor principal */
+#general {
+    width: 1200px;
+    margin: 20px auto;
+    border: 5px solid black;
+}
+
+/* Estilo de la cabecera */
+header {
+    height: 100px;
+    background-color: rgb(50, 50, 200);
+    color: wheat;
+    text-align: center;
+    line-height: 100px; /* Centrado vertical */
+}
+
+/* Menú de navegación */
+#menu {
+    background-color: #ccc;
+}
+
+#menu ul {
+    list-style: none; /* Eliminar estilo de lista */
+}
+
+#menu li {
+    float: left;
+    border-right: 1px solid #eee; /* Borde derecho */
+}
+
+#menu a {
+    display: block;
+    padding: 15px;
+    text-decoration: none; /* Sin subrayado */
+}
+
+#menu li:hover {
+    background-color: rgb(50, 50, 200);
+}
+
+#menu li:hover a {
+    color: wheat;
+}
+
+/* Distribución del contenido */
+#contenido {
+    float: left;
+    width: 70%;
+}
+
+#contenido h3 {
+    text-align: center;
+    padding: 15px;
+    color: #444;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo de las cajas */
+.caja {
+    float: left;
+    width: 350px;
+    height: 250px;
+    margin: 20px 40px 20px 0; /* Margen superior e inferior, izquierdo */
+    border-radius: 5px;
+    background-color: #eee;
+    box-shadow: 0 0 15px black; /* Sombra negra */
+    transition: background-color 300ms, color 300ms;
+}
+
+.caja:hover {
+    background-color: rgb(50, 50, 200);
+    cursor: pointer;
+}
+
+.caja h4 {
+    color: black; /* Color por defecto */
+}
+
+.caja:hover h4 {
+    color: wheat; /* Color al pasar el ratón */
+}
+
+/* Barra lateral */
+#lateral {
+    float: right;
+    width: 25%;
+    min-height: 500px;
+    max-height: 1165px;
+    overflow-y: scroll; /* Desplazamiento vertical */
+    margin-top: 20px;
+    text-align: justify;
+}
+
+/* Pie de página */
+footer {
+    width: 100%;
+    height: 55px;
+    background-color: #eee;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    line-height: 55px; /* Centrado vertical */
+}
